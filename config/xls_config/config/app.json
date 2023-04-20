@@ -1,0 +1,40 @@
+{
+    "p4_path":"cache/p4.txt",
+    "use_md5":true,
+    "md5_path":"cache/",
+    "schema_path": "xlscheck/schema/",
+    "global_config_path": "../../LuaFramework_UGUI_V2/PubliuResources/lua/ab/crossplatform/config/client/",
+    "duplicate_handle": true, 
+    "i18n": "./project_cfg/language/",
+    "export": [
+        {
+            "excel_path": "./project_cfg/client/",
+            "export_path": "../../LuaFramework_UGUI_V2/PubliuResources/lua/ab/crossplatform/config/client/client/",
+            "format": "lua",
+            "link_path": "../../LuaFramework_UGUI_V2/PubliuResources/lua/ab/crossplatform/config/client/client/",
+            "unique_path": "../../LuaFramework_UGUI_V2/PubliuResources/lua/ab/crossplatform/config/"
+        },
+        {
+            "excel_path": "./project_cfg/shared/",
+            "export_path": "../../LuaFramework_UGUI_V2/PubliuResources/lua/ab/crossplatform/config/client/shared/",
+            "format": "lua",
+            "link_path": "../../LuaFramework_UGUI_V2/PubliuResources/lua/ab/crossplatform/config/client/shared/",
+            "unique_path": "../../LuaFramework_UGUI_V2/PubliuResources/lua/ab/crossplatform/config/"
+        },
+        {
+            "excel_path": "./project_cfg/shared/",
+            "export_path": "../../LuaFramework_UGUI_V2/PubliuResources/lua/ab/crossplatform/config/server/shared/",
+            "format": "csv"
+        },
+        {
+            "excel_path": "./project_cfg/server/",
+            "export_path": "../../LuaFramework_UGUI_V2/PubliuResources/lua/ab/crossplatform/config/server/server/",
+            "format": "csv"
+        },
+        {
+            "excel_path": "./project_cfg/language/",
+            "export_path": "../../LuaFramework_UGUI_V2/PubliuResources/lua/ab/crossplatform/config/client/localization/",
+            "format": "lua"
+        }
+    ]
+}

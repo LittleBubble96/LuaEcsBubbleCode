@@ -1,0 +1,23 @@
+﻿#####################
+#需要安装2012.3以上版本或者直接装最新版（公司默认安装的是2012.2），并且设置环境变量P4IGNORE=p4ignore.txt，功能才能生效
+#语法说明：
+#  #：注释
+#  *：匹配除了斜杠之外的任意字符，比如*.xml.bytes
+#  !：白名单，比如!readme.txt
+
+#####################
+#common
+.vs
+
+#####################
+SchemaTool/bin
+SchemaTool/obj
+SchemaTool/demo/cache/md5.json
+SchemaTool/demo/test
+SchemaTool/demo/export
+
+
+
+Debug
+Release
+PredictedInputCache_*.dat

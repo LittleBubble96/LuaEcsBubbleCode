@@ -1,0 +1,34 @@
+{
+  "version": 2,
+  "dgSpecHash": "V2f8MkmSgVM9m1Ux4TB/v6sGAhUgyRQNJh/CfaQktjsQSuRdrHbd6YUmIx7w8cbNiQGWpmWSmCttAPHFTkyvgw==",
+  "success": true,
+  "projectFilePath": "D:\\UnityHome\\bubble_code\\config\\xls_config\\src\\SchemaTool\\SchemaTool.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sxx\\.nuget\\packages\\antlr4\\4.6.6\\antlr4.4.6.6.nupkg.sha512",
+    "C:\\Users\\sxx\\.nuget\\packages\\antlr4.codegenerator\\4.6.6\\antlr4.codegenerator.4.6.6.nupkg.sha512",
+    "C:\\Users\\sxx\\.nuget\\packages\\antlr4.runtime\\4.6.6\\antlr4.runtime.4.6.6.nupkg.sha512",
+    "C:\\Users\\sxx\\.nuget\\packages\\commandlineparser\\2.6.0\\commandlineparser.2.6.0.nupkg.sha512",
+    "C:\\Users\\sxx\\.nuget\\packages\\dotliquid\\2.0.314\\dotliquid.2.0.314.nupkg.sha512",
+    "C:\\Users\\sxx\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\sxx\\.nuget\\packages\\nlog\\4.7.5\\nlog.4.7.5.nupkg.sha512",
+    "C:\\Users\\sxx\\.nuget\\packages\\nlog.config\\4.7.15\\nlog.config.4.7.15.nupkg.sha512",
+    "C:\\Users\\sxx\\.nuget\\packages\\nlog.schema\\4.7.15\\nlog.schema.4.7.15.nupkg.sha512",
+    "C:\\Users\\sxx\\.nuget\\packages\\npoi\\2.4.1\\npoi.2.4.1.nupkg.sha512",
+    "C:\\Users\\sxx\\.nuget\\packages\\sharpziplib\\1.0.0\\sharpziplib.1.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "检测到包降级: NLog 从 4.7.15 降级到 4.7.5。直接从项目引用包以选择不同版本。 \r\n SchemaTool -> NLog.Config 4.7.15 -> NLog (>= 4.7.15) \r\n SchemaTool -> NLog (>= 4.7.5)",
+      "libraryId": "NLog",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.6",
+        ".NETFramework,Version=v4.6/win",
+        ".NETFramework,Version=v4.6/win-x64",
+        ".NETFramework,Version=v4.6/win-x86"
+      ]
+    }
+  ]
+}

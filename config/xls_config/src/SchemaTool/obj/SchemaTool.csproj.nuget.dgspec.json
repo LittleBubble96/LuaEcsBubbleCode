@@ -1,0 +1,91 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\UnityHome\\bubble_code\\config\\xls_config\\src\\SchemaTool\\SchemaTool.csproj": {}
+  },
+  "projects": {
+    "D:\\UnityHome\\bubble_code\\config\\xls_config\\src\\SchemaTool\\SchemaTool.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\UnityHome\\bubble_code\\config\\xls_config\\src\\SchemaTool\\SchemaTool.csproj",
+        "projectName": "SchemaTool",
+        "projectPath": "D:\\UnityHome\\bubble_code\\config\\xls_config\\src\\SchemaTool\\SchemaTool.csproj",
+        "packagesPath": "C:\\Users\\sxx\\.nuget\\packages\\",
+        "outputPath": "D:\\UnityHome\\bubble_code\\config\\xls_config\\src\\SchemaTool\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\sxx\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net46"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net46": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net46": {
+          "dependencies": {
+            "Antlr4": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.6.6, )"
+            },
+            "Antlr4.CodeGenerator": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.6.6, )"
+            },
+            "Antlr4.Runtime": {
+              "target": "Package",
+              "version": "[4.6.6, )"
+            },
+            "CommandLineParser": {
+              "target": "Package",
+              "version": "[2.6.0, )"
+            },
+            "DotLiquid": {
+              "target": "Package",
+              "version": "[2.0.314, )"
+            },
+            "NLog": {
+              "target": "Package",
+              "version": "[4.7.5, )"
+            },
+            "NLog.Config": {
+              "target": "Package",
+              "version": "[4.7.15, )"
+            },
+            "NPOI": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

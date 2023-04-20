@@ -1,0 +1,916 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.6": {
+      "Antlr4/4.6.6": {
+        "type": "package",
+        "dependencies": {
+          "Antlr4.CodeGenerator": "4.6.6",
+          "Antlr4.Runtime": "4.6.6"
+        }
+      },
+      "Antlr4.CodeGenerator/4.6.6": {
+        "type": "package",
+        "build": {
+          "build/Antlr4.CodeGenerator.props": {},
+          "build/Antlr4.CodeGenerator.targets": {}
+        }
+      },
+      "Antlr4.Runtime/4.6.6": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Antlr4.Runtime.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Antlr4.Runtime.dll": {}
+        }
+      },
+      "CommandLineParser/2.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/CommandLine.dll": {}
+        },
+        "runtime": {
+          "lib/net45/CommandLine.dll": {}
+        }
+      },
+      "DotLiquid/2.0.314": {
+        "type": "package",
+        "compile": {
+          "lib/net45/DotLiquid.dll": {}
+        },
+        "runtime": {
+          "lib/net45/DotLiquid.dll": {}
+        },
+        "resource": {
+          "lib/net45/it/DotLiquid.resources.dll": {
+            "locale": "it"
+          }
+        }
+      },
+      "Newtonsoft.Json/12.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "NLog/4.7.5": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.Configuration",
+          "System.Core",
+          "System.Data",
+          "System.IO.Compression",
+          "System.Runtime.Serialization",
+          "System.ServiceModel",
+          "System.Transactions",
+          "System.Xml"
+        ],
+        "compile": {
+          "lib/net45/NLog.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NLog.dll": {}
+        }
+      },
+      "NLog.Config/4.7.15": {
+        "type": "package",
+        "dependencies": {
+          "NLog": "4.7.15",
+          "NLog.Schema": "4.7.15"
+        },
+        "contentFiles": {
+          "contentFiles/any/any/NLog.config": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "NLog.config"
+          }
+        }
+      },
+      "NLog.Schema/4.7.15": {
+        "type": "package",
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
+      "NPOI/2.4.1": {
+        "type": "package",
+        "dependencies": {
+          "SharpZipLib": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/NPOI.OOXML.dll": {},
+          "lib/net45/NPOI.OpenXml4Net.dll": {},
+          "lib/net45/NPOI.OpenXmlFormats.dll": {},
+          "lib/net45/NPOI.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NPOI.OOXML.dll": {},
+          "lib/net45/NPOI.OpenXml4Net.dll": {},
+          "lib/net45/NPOI.OpenXmlFormats.dll": {},
+          "lib/net45/NPOI.dll": {}
+        }
+      },
+      "SharpZipLib/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/ICSharpCode.SharpZipLib.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ICSharpCode.SharpZipLib.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6/win": {
+      "Antlr4/4.6.6": {
+        "type": "package",
+        "dependencies": {
+          "Antlr4.CodeGenerator": "4.6.6",
+          "Antlr4.Runtime": "4.6.6"
+        }
+      },
+      "Antlr4.CodeGenerator/4.6.6": {
+        "type": "package",
+        "build": {
+          "build/Antlr4.CodeGenerator.props": {},
+          "build/Antlr4.CodeGenerator.targets": {}
+        }
+      },
+      "Antlr4.Runtime/4.6.6": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Antlr4.Runtime.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Antlr4.Runtime.dll": {}
+        }
+      },
+      "CommandLineParser/2.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/CommandLine.dll": {}
+        },
+        "runtime": {
+          "lib/net45/CommandLine.dll": {}
+        }
+      },
+      "DotLiquid/2.0.314": {
+        "type": "package",
+        "compile": {
+          "lib/net45/DotLiquid.dll": {}
+        },
+        "runtime": {
+          "lib/net45/DotLiquid.dll": {}
+        },
+        "resource": {
+          "lib/net45/it/DotLiquid.resources.dll": {
+            "locale": "it"
+          }
+        }
+      },
+      "Newtonsoft.Json/12.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "NLog/4.7.5": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.Configuration",
+          "System.Core",
+          "System.Data",
+          "System.IO.Compression",
+          "System.Runtime.Serialization",
+          "System.ServiceModel",
+          "System.Transactions",
+          "System.Xml"
+        ],
+        "compile": {
+          "lib/net45/NLog.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NLog.dll": {}
+        }
+      },
+      "NLog.Config/4.7.15": {
+        "type": "package",
+        "dependencies": {
+          "NLog": "4.7.15",
+          "NLog.Schema": "4.7.15"
+        },
+        "contentFiles": {
+          "contentFiles/any/any/NLog.config": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "NLog.config"
+          }
+        }
+      },
+      "NLog.Schema/4.7.15": {
+        "type": "package",
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
+      "NPOI/2.4.1": {
+        "type": "package",
+        "dependencies": {
+          "SharpZipLib": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/NPOI.OOXML.dll": {},
+          "lib/net45/NPOI.OpenXml4Net.dll": {},
+          "lib/net45/NPOI.OpenXmlFormats.dll": {},
+          "lib/net45/NPOI.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NPOI.OOXML.dll": {},
+          "lib/net45/NPOI.OpenXml4Net.dll": {},
+          "lib/net45/NPOI.OpenXmlFormats.dll": {},
+          "lib/net45/NPOI.dll": {}
+        }
+      },
+      "SharpZipLib/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/ICSharpCode.SharpZipLib.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ICSharpCode.SharpZipLib.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6/win-x64": {
+      "Antlr4/4.6.6": {
+        "type": "package",
+        "dependencies": {
+          "Antlr4.CodeGenerator": "4.6.6",
+          "Antlr4.Runtime": "4.6.6"
+        }
+      },
+      "Antlr4.CodeGenerator/4.6.6": {
+        "type": "package",
+        "build": {
+          "build/Antlr4.CodeGenerator.props": {},
+          "build/Antlr4.CodeGenerator.targets": {}
+        }
+      },
+      "Antlr4.Runtime/4.6.6": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Antlr4.Runtime.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Antlr4.Runtime.dll": {}
+        }
+      },
+      "CommandLineParser/2.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/CommandLine.dll": {}
+        },
+        "runtime": {
+          "lib/net45/CommandLine.dll": {}
+        }
+      },
+      "DotLiquid/2.0.314": {
+        "type": "package",
+        "compile": {
+          "lib/net45/DotLiquid.dll": {}
+        },
+        "runtime": {
+          "lib/net45/DotLiquid.dll": {}
+        },
+        "resource": {
+          "lib/net45/it/DotLiquid.resources.dll": {
+            "locale": "it"
+          }
+        }
+      },
+      "Newtonsoft.Json/12.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "NLog/4.7.5": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.Configuration",
+          "System.Core",
+          "System.Data",
+          "System.IO.Compression",
+          "System.Runtime.Serialization",
+          "System.ServiceModel",
+          "System.Transactions",
+          "System.Xml"
+        ],
+        "compile": {
+          "lib/net45/NLog.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NLog.dll": {}
+        }
+      },
+      "NLog.Config/4.7.15": {
+        "type": "package",
+        "dependencies": {
+          "NLog": "4.7.15",
+          "NLog.Schema": "4.7.15"
+        },
+        "contentFiles": {
+          "contentFiles/any/any/NLog.config": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "NLog.config"
+          }
+        }
+      },
+      "NLog.Schema/4.7.15": {
+        "type": "package",
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
+      "NPOI/2.4.1": {
+        "type": "package",
+        "dependencies": {
+          "SharpZipLib": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/NPOI.OOXML.dll": {},
+          "lib/net45/NPOI.OpenXml4Net.dll": {},
+          "lib/net45/NPOI.OpenXmlFormats.dll": {},
+          "lib/net45/NPOI.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NPOI.OOXML.dll": {},
+          "lib/net45/NPOI.OpenXml4Net.dll": {},
+          "lib/net45/NPOI.OpenXmlFormats.dll": {},
+          "lib/net45/NPOI.dll": {}
+        }
+      },
+      "SharpZipLib/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/ICSharpCode.SharpZipLib.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ICSharpCode.SharpZipLib.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6/win-x86": {
+      "Antlr4/4.6.6": {
+        "type": "package",
+        "dependencies": {
+          "Antlr4.CodeGenerator": "4.6.6",
+          "Antlr4.Runtime": "4.6.6"
+        }
+      },
+      "Antlr4.CodeGenerator/4.6.6": {
+        "type": "package",
+        "build": {
+          "build/Antlr4.CodeGenerator.props": {},
+          "build/Antlr4.CodeGenerator.targets": {}
+        }
+      },
+      "Antlr4.Runtime/4.6.6": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Antlr4.Runtime.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Antlr4.Runtime.dll": {}
+        }
+      },
+      "CommandLineParser/2.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/CommandLine.dll": {}
+        },
+        "runtime": {
+          "lib/net45/CommandLine.dll": {}
+        }
+      },
+      "DotLiquid/2.0.314": {
+        "type": "package",
+        "compile": {
+          "lib/net45/DotLiquid.dll": {}
+        },
+        "runtime": {
+          "lib/net45/DotLiquid.dll": {}
+        },
+        "resource": {
+          "lib/net45/it/DotLiquid.resources.dll": {
+            "locale": "it"
+          }
+        }
+      },
+      "Newtonsoft.Json/12.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "NLog/4.7.5": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.Configuration",
+          "System.Core",
+          "System.Data",
+          "System.IO.Compression",
+          "System.Runtime.Serialization",
+          "System.ServiceModel",
+          "System.Transactions",
+          "System.Xml"
+        ],
+        "compile": {
+          "lib/net45/NLog.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NLog.dll": {}
+        }
+      },
+      "NLog.Config/4.7.15": {
+        "type": "package",
+        "dependencies": {
+          "NLog": "4.7.15",
+          "NLog.Schema": "4.7.15"
+        },
+        "contentFiles": {
+          "contentFiles/any/any/NLog.config": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "NLog.config"
+          }
+        }
+      },
+      "NLog.Schema/4.7.15": {
+        "type": "package",
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
+      "NPOI/2.4.1": {
+        "type": "package",
+        "dependencies": {
+          "SharpZipLib": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/NPOI.OOXML.dll": {},
+          "lib/net45/NPOI.OpenXml4Net.dll": {},
+          "lib/net45/NPOI.OpenXmlFormats.dll": {},
+          "lib/net45/NPOI.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NPOI.OOXML.dll": {},
+          "lib/net45/NPOI.OpenXml4Net.dll": {},
+          "lib/net45/NPOI.OpenXmlFormats.dll": {},
+          "lib/net45/NPOI.dll": {}
+        }
+      },
+      "SharpZipLib/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/ICSharpCode.SharpZipLib.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ICSharpCode.SharpZipLib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Antlr4/4.6.6": {
+      "sha512": "mtHCpallXyZaWd2quDmR/sc7mBf18+nelxakWYpHVc9v0T0zM9SevzhUZxh2PKPsQbEKnDACfYHNJMqKkmTs1g==",
+      "type": "package",
+      "path": "antlr4/4.6.6",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "antlr4.4.6.6.nupkg.sha512",
+        "antlr4.nuspec",
+        "tools/LICENSE.txt",
+        "tools/THIRD-PARTY-NOTICES.txt"
+      ]
+    },
+    "Antlr4.CodeGenerator/4.6.6": {
+      "sha512": "AStoC8SCdU1TUSn5Bh0xZU9rlvaERwXkrgqc1jEFON3e/xBtapCuThYIzgXL9TOignWwHjLxlHH233D+DfH9LA==",
+      "type": "package",
+      "path": "antlr4.codegenerator/4.6.6",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "antlr4.codegenerator.4.6.6.nupkg.sha512",
+        "antlr4.codegenerator.nuspec",
+        "build/Antlr4.CodeGenerator.DefaultItems.props",
+        "build/Antlr4.CodeGenerator.DefaultItems.targets",
+        "build/Antlr4.CodeGenerator.props",
+        "build/Antlr4.CodeGenerator.targets",
+        "build/Rules/Antlr4.ProjectItemsSchema.xml",
+        "build/Rules/Antlr4.xml",
+        "tools/antlr4-csharp-4.6.6-complete.jar",
+        "tools/net40/Antlr4BuildTasks.dll",
+        "tools/net45/Antlr3.Runtime.dll",
+        "tools/net45/Antlr4.Runtime.dll",
+        "tools/net45/Antlr4.StringTemplate.dll",
+        "tools/net45/Antlr4.exe",
+        "tools/net45/Tool/Templates/Codegen/CSharp/CSharp.stg",
+        "tools/net45/Tool/Templates/Codegen/CSharp/CSharp_v2_0.stg",
+        "tools/net45/Tool/Templates/Codegen/CSharp/CSharp_v3_0.stg",
+        "tools/net45/Tool/Templates/Codegen/CSharp/CSharp_v3_5.stg",
+        "tools/net45/Tool/Templates/Codegen/CSharp/CSharp_v4_0.stg",
+        "tools/net45/Tool/Templates/Codegen/CSharp/CSharp_v4_5.stg",
+        "tools/net45/Tool/Templates/Codegen/Java/Java.stg",
+        "tools/net45/Tool/Templates/Dot/graphs.stg",
+        "tools/net45/Tool/Templates/LeftRecursiveRules.stg",
+        "tools/net45/Tool/Templates/Messages/Formats/antlr.stg",
+        "tools/net45/Tool/Templates/Messages/Formats/gnu.stg",
+        "tools/net45/Tool/Templates/Messages/Formats/vs2005.stg",
+        "tools/net45/Tool/Templates/depend.stg",
+        "tools/netstandard/Antlr3.Runtime.dll",
+        "tools/netstandard/Antlr4.Runtime.dll",
+        "tools/netstandard/Antlr4.StringTemplate.dll",
+        "tools/netstandard/Antlr4.dll",
+        "tools/netstandard/Antlr4BuildTasks.dll",
+        "tools/netstandard/Tool/Templates/Codegen/CSharp/CSharp.stg",
+        "tools/netstandard/Tool/Templates/Codegen/CSharp/CSharp_v2_0.stg",
+        "tools/netstandard/Tool/Templates/Codegen/CSharp/CSharp_v3_0.stg",
+        "tools/netstandard/Tool/Templates/Codegen/CSharp/CSharp_v3_5.stg",
+        "tools/netstandard/Tool/Templates/Codegen/CSharp/CSharp_v4_0.stg",
+        "tools/netstandard/Tool/Templates/Codegen/CSharp/CSharp_v4_5.stg",
+        "tools/netstandard/Tool/Templates/Codegen/Java/Java.stg",
+        "tools/netstandard/Tool/Templates/Dot/graphs.stg",
+        "tools/netstandard/Tool/Templates/LeftRecursiveRules.stg",
+        "tools/netstandard/Tool/Templates/Messages/Formats/antlr.stg",
+        "tools/netstandard/Tool/Templates/Messages/Formats/gnu.stg",
+        "tools/netstandard/Tool/Templates/Messages/Formats/vs2005.stg",
+        "tools/netstandard/Tool/Templates/depend.stg"
+      ]
+    },
+    "Antlr4.Runtime/4.6.6": {
+      "sha512": "NlbRjkTCidRh1QeWvGfFPKq0sqpPZrAwGaSTV0X2jL8buZxTf9/aQ7PehFAmc7erXLUQ3YMZEVZU86aQwma2+w==",
+      "type": "package",
+      "path": "antlr4.runtime/4.6.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "antlr4.runtime.4.6.6.nupkg.sha512",
+        "antlr4.runtime.nuspec",
+        "lib/net20/Antlr4.Runtime.dll",
+        "lib/net20/Antlr4.Runtime.xml",
+        "lib/net30/Antlr4.Runtime.dll",
+        "lib/net30/Antlr4.Runtime.xml",
+        "lib/net35-cf/Antlr4.Runtime.dll",
+        "lib/net35-cf/Antlr4.Runtime.xml",
+        "lib/net35-client/Antlr4.Runtime.dll",
+        "lib/net35-client/Antlr4.Runtime.xml",
+        "lib/net40-client/Antlr4.Runtime.dll",
+        "lib/net40-client/Antlr4.Runtime.xml",
+        "lib/net45/Antlr4.Runtime.dll",
+        "lib/net45/Antlr4.Runtime.xml",
+        "lib/netstandard1.1/Antlr4.Runtime.dll",
+        "lib/netstandard1.1/Antlr4.Runtime.xml",
+        "lib/portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/Antlr4.Runtime.dll",
+        "lib/portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/Antlr4.Runtime.xml"
+      ]
+    },
+    "CommandLineParser/2.6.0": {
+      "sha512": "jjJ2Ey2pPY6OeY74Qau2cH+M+pN4kvvSP+kKlDzIZUcJs1oK+QlNjQYnm8HQj2fQa2aZLtwJig4MI0Vbx4YBSA==",
+      "type": "package",
+      "path": "commandlineparser/2.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "commandlineparser.2.6.0.nupkg.sha512",
+        "commandlineparser.nuspec",
+        "lib/net40/CommandLine.dll",
+        "lib/net40/CommandLine.xml",
+        "lib/net45/CommandLine.dll",
+        "lib/net45/CommandLine.xml",
+        "lib/net461/CommandLine.dll",
+        "lib/net461/CommandLine.xml",
+        "lib/netstandard2.0/CommandLine.dll",
+        "lib/netstandard2.0/CommandLine.xml"
+      ]
+    },
+    "DotLiquid/2.0.314": {
+      "sha512": "3yzgQrajOKO2p/O1Dmbxx36DkfCz3Gtu5NC1C7CwWg//oLZ9WXo2D4McM+/jsdU9iVyq7WY12G2VhdErEEyS8g==",
+      "type": "package",
+      "path": "dotliquid/2.0.314",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "dotliquid.2.0.314.nupkg.sha512",
+        "dotliquid.nuspec",
+        "lib/net45/DotLiquid.dll",
+        "lib/net45/DotLiquid.xml",
+        "lib/net45/it/DotLiquid.resources.dll",
+        "lib/netstandard1.3/DotLiquid.dll",
+        "lib/netstandard1.3/DotLiquid.xml",
+        "lib/netstandard1.3/it/DotLiquid.resources.dll",
+        "readme.txt"
+      ]
+    },
+    "Newtonsoft.Json/12.0.2": {
+      "sha512": "rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec"
+      ]
+    },
+    "NLog/4.7.5": {
+      "sha512": "1Udzim+UwoAGk0vW6T2rEBXJq1COvqTuE+4NFj2zHytuX1WOu+1Yes1qABG1IJOA5V3OMilIufUU1Ha9T0rrzQ==",
+      "type": "package",
+      "path": "nlog/4.7.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid44/NLog.dll",
+        "lib/monoandroid44/NLog.xml",
+        "lib/net35/NLog.dll",
+        "lib/net35/NLog.xml",
+        "lib/net40-client/NLog.dll",
+        "lib/net40-client/NLog.xml",
+        "lib/net45/NLog.dll",
+        "lib/net45/NLog.xml",
+        "lib/netstandard1.3/NLog.dll",
+        "lib/netstandard1.3/NLog.xml",
+        "lib/netstandard1.5/NLog.dll",
+        "lib/netstandard1.5/NLog.xml",
+        "lib/netstandard2.0/NLog.dll",
+        "lib/netstandard2.0/NLog.xml",
+        "lib/sl4/NLog.dll",
+        "lib/sl4/NLog.xml",
+        "lib/sl5/NLog.dll",
+        "lib/sl5/NLog.xml",
+        "lib/wp8/NLog.dll",
+        "lib/wp8/NLog.xml",
+        "lib/xamarinios10/NLog.dll",
+        "lib/xamarinios10/NLog.xml",
+        "nlog.4.7.5.nupkg.sha512",
+        "nlog.nuspec"
+      ]
+    },
+    "NLog.Config/4.7.15": {
+      "sha512": "njc2NvwgAzEuH609TGO4yqpokcxXFdypHwG3I8hyLYIE4pr+j4KJB4ZhsyODVwkP/n2F2V4uJ24VW4icNyJMcA==",
+      "type": "package",
+      "path": "nlog.config/4.7.15",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/NLog.config",
+        "contentFiles/any/any/NLog.config",
+        "nlog.config.4.7.15.nupkg.sha512",
+        "nlog.config.nuspec",
+        "tools/Install.ps1"
+      ]
+    },
+    "NLog.Schema/4.7.15": {
+      "sha512": "cBzca2abS5Qz8e40vIPZNWBiDAQaRY7PKWffBbazMAzvxGBM6/ZWgaAEmqHUOluhV41cuyXnHOzo485JPLeChg==",
+      "type": "package",
+      "path": "nlog.schema/4.7.15",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/NLog.xsd",
+        "contentFiles/any/any/NLog.xsd",
+        "nlog.schema.4.7.15.nupkg.sha512",
+        "nlog.schema.nuspec"
+      ]
+    },
+    "NPOI/2.4.1": {
+      "sha512": "85790/CY9z4DCU1KLpcdLSqaqaqmQOenTqXJfcsYK8LIKNAAoTgjT5LYLbORgdwAd63sbaJiCfB1SIn/dAXrJw==",
+      "type": "package",
+      "path": "npoi/2.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "Read Me.txt",
+        "lib/NPOI.xml",
+        "lib/net40/NPOI.OOXML.dll",
+        "lib/net40/NPOI.OpenXml4Net.dll",
+        "lib/net40/NPOI.OpenXmlFormats.dll",
+        "lib/net40/NPOI.dll",
+        "lib/net45/NPOI.OOXML.dll",
+        "lib/net45/NPOI.OpenXml4Net.dll",
+        "lib/net45/NPOI.OpenXmlFormats.dll",
+        "lib/net45/NPOI.dll",
+        "lib/netstandard2.0/NPOI.OOXML.deps.json",
+        "lib/netstandard2.0/NPOI.OOXML.dll",
+        "lib/netstandard2.0/NPOI.OpenXml4Net.deps.json",
+        "lib/netstandard2.0/NPOI.OpenXml4Net.dll",
+        "lib/netstandard2.0/NPOI.OpenXmlFormats.deps.json",
+        "lib/netstandard2.0/NPOI.OpenXmlFormats.dll",
+        "lib/netstandard2.0/NPOI.deps.json",
+        "lib/netstandard2.0/NPOI.dll",
+        "logo/120_120.jpg",
+        "logo/240_240.png",
+        "logo/32_32.jpg",
+        "logo/60_60.jpg",
+        "npoi.2.4.1.nupkg.sha512",
+        "npoi.nuspec"
+      ]
+    },
+    "SharpZipLib/1.0.0": {
+      "sha512": "YuYztmY3jEb21F6e5LIPHJjApdtzdCPQ284UzsCKNfkgW71bukFHJES6RbKi+wm053XzFg0LX5/2vj/9gl8F/g==",
+      "type": "package",
+      "path": "sharpziplib/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/ICSharpCode.SharpZipLib.dll",
+        "lib/net45/ICSharpCode.SharpZipLib.xml",
+        "lib/netstandard2.0/ICSharpCode.SharpZipLib.dll",
+        "lib/netstandard2.0/ICSharpCode.SharpZipLib.xml",
+        "sharpziplib.1.0.0.nupkg.sha512",
+        "sharpziplib.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.6": [
+      "Antlr4 >= 4.6.6",
+      "Antlr4.CodeGenerator >= 4.6.6",
+      "Antlr4.Runtime >= 4.6.6",
+      "CommandLineParser >= 2.6.0",
+      "DotLiquid >= 2.0.314",
+      "NLog >= 4.7.5",
+      "NLog.Config >= 4.7.15",
+      "NPOI >= 2.4.1",
+      "Newtonsoft.Json >= 12.0.2"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\sxx\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\UnityHome\\bubble_code\\config\\xls_config\\src\\SchemaTool\\SchemaTool.csproj",
+      "projectName": "SchemaTool",
+      "projectPath": "D:\\UnityHome\\bubble_code\\config\\xls_config\\src\\SchemaTool\\SchemaTool.csproj",
+      "packagesPath": "C:\\Users\\sxx\\.nuget\\packages\\",
+      "outputPath": "D:\\UnityHome\\bubble_code\\config\\xls_config\\src\\SchemaTool\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "C:\\Users\\sxx\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net46"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net46": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "net46": {
+        "dependencies": {
+          "Antlr4": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[4.6.6, )"
+          },
+          "Antlr4.CodeGenerator": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[4.6.6, )"
+          },
+          "Antlr4.Runtime": {
+            "target": "Package",
+            "version": "[4.6.6, )"
+          },
+          "CommandLineParser": {
+            "target": "Package",
+            "version": "[2.6.0, )"
+          },
+          "DotLiquid": {
+            "target": "Package",
+            "version": "[2.0.314, )"
+          },
+          "NLog": {
+            "target": "Package",
+            "version": "[4.7.5, )"
+          },
+          "NLog.Config": {
+            "target": "Package",
+            "version": "[4.7.15, )"
+          },
+          "NPOI": {
+            "target": "Package",
+            "version": "[2.4.1, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[12.0.2, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "检测到包降级: NLog 从 4.7.15 降级到 4.7.5。直接从项目引用包以选择不同版本。 \r\n SchemaTool -> NLog.Config 4.7.15 -> NLog (>= 4.7.15) \r\n SchemaTool -> NLog (>= 4.7.5)",
+      "libraryId": "NLog",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.6",
+        ".NETFramework,Version=v4.6/win",
+        ".NETFramework,Version=v4.6/win-x64",
+        ".NETFramework,Version=v4.6/win-x86"
+      ]
+    }
+  ]
+}
